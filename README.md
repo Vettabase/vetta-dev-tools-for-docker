@@ -17,8 +17,8 @@ Adjust the settings in config-build.sh.
 
 ## Copyright and License
 
-Vettabase Ltd  2020
-License: GNU GPL 3
+Vettabase Ltd  2020<br/>
+License: GNU GPL 3<br/>
 See LICENSE file.
 
 
