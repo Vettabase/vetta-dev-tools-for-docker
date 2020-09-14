@@ -1,9 +1,9 @@
-== Vetta Dev Tools for Docker
+# Vetta Dev Tools for Docker
 
 Tools to develop and build Docker images.
 
 
-== Install
+## Install
 
 Create a configuration file from the template:
 
@@ -15,7 +15,7 @@ chmod u+wx config-build.sh
 Adjust the settings in config-build.sh.
 
 
-== Copyright and License
+## Copyright and License
 
 Vettabase Ltd  2020
 License: GNU GPL 3
