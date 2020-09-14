@@ -1,0 +1,52 @@
+## This file is part of Vetta Dev Tools for Docker.
+## Copyright: Vettabase Ltd  2020
+## License: GNU GPL3. See LICENSE file.
+
+# Configuration file.
+
+
+# Name of the image to build
+DEFAULT_IMAGE=
+
+# Don't set this, unless you only have one tag
+DEFAULT_TAG=
+
+# Default tag for test builds
+TEST_DEFAULT_TAG=test
+
+# Name of the container to create during tests.
+# If a container with the same name exists,
+# it will be removed.
+TEST_CONTAINER=test
+
+# Recognised values:
+# 0: the container is destroyed after tests
+# 1: the container is not destroyed
+# ON_ERROR: the container is preserved
+# if tests fail, to allow debugging
+PRESERVE_TEST_CONTAINER=ON_ERROR
+
+# Set to exactly '1' to use colours to increase
+# usability for people who are not colourblind.
+USE_COLOURS=0
+
+
+# TESTS
+
+# If set to 1, test-build.sh will test that the
+# container is running.
+# Disable is the container is not a daemon.
+SHOULD_RUN=1
+
+# If set to 1, test-build.sh will test that the
+# container is able to run echo.
+SHOULD_ECHO=1
+
+# If not empty, test-build.sh will test that the
+# container is able to run SHOULD_EXEC_QUESTION
+# and will grep SHOULD_GREP_ANSWER.
+# against the answer.
+SHOULD_EXEC_QUESTION=
+SHOULD_GREP_ANSWER=
+
+
