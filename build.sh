@@ -27,8 +27,9 @@ DIR
     Path of the Dockerfile. By default, it is a directory called
     $TAG, located in the current directory
 CACHE=1
-    Force to use the cache. If not specified,
-    or if any other value is passed, the cache will be used.
+    Force to use Docker cache.
+    If 1 is specified, the cache will be used.
+    With any other value, the cache will not be used.
 
 Default values for IMAGE and TAG can also be set in config-build.sh.
 '
@@ -66,7 +67,7 @@ then
 fi
 
 # By default, --no-cache is used. To use the cache, specify CACHE=1
-if [ $CACHE=='1' ];
+if [ "$CACHE" == '1' ];
 then
     OPTIONS=''
 else
