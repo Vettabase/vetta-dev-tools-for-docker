@@ -2,6 +2,9 @@
 
 Tools to develop and build Docker images.
 
+These tools were written to build and test Docker images that
+can be found in [vettadock](https://hub.docker.com/u/vettadock).
+
 
 ## Install
 
