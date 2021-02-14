@@ -1,0 +1,5 @@
+# We version the config template.
+# Don't version the actualy config file, as it contains data related
+# to the current project.
+config-build.sh
+
